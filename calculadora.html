@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <style>
+        body {
+            font: normal 15pt Arial;
+            background-color: dodgerblue;
+            
+        }
+        h1#subTitulo{
+            margin-left: 100px;
+            color: pink;
+            
+        }
+        input{
+            width: 110px;
+            height: 25px;
+        }
+        div#resultado {
+            color: darkblue;
+            margin-top: 20px;
+            margin-bottom: 5px;
+           
+            
+        }
+        div#resultado2 {
+            color: darkblue;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            
+        }
+        div#resultado3 {
+            color: darkblue;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        div#resultado4 {
+            color: darkblue;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        p#by {
+            margin-top: 100px;
+            font: normal 8pt arial ;
+            color:  darkblue;
+        }
+
+    </style>
+   
+</head>
+<body>
+    <h1 id="subTitulo">Calculadora</h1>
+    <input type="number" name="pNumero" id="pNumero1"> +
+    <input type="number" name="sNumero" id="pNumero2">
+    <input type="button" value="Somar" onclick="somar()" >
+    <input type="button" value="Limpar" onclick="limpar()"> 
+    <div id="resultado">  Resultado ... </div>
+    
+
+    <input type="number"  id="nD1"> -
+    <input type="number"  id="nD2">
+    <input type="button" value="Diminuir" onclick="diminuir()"> 
+    <input type="button" value="Limpar" onclick="limpar2()">
+    <div id="resultado2">  Resultado ... </div>
+
+    <input type="number"  id="nM1"> *
+    <input type="number"  id="nM2">
+    <input type="button" value="Multiplicar" onclick="multiplicar()"> 
+    <input type="button" value="Limpar" onclick="limpar3()">
+    <div id="resultado3">  Resultado ... </div>
+
+    <input type="number"  id="n1"> /
+    <input type="number"  id="n2">
+    <input type="button" value="Dividir" onclick="dividir()"> 
+    <input type="button" value="Limpar" onclick="limpar4()">
+    <div id="resultado4">  Resultado ... </div>
+    <p id="by">by: Richardson Rodrigues</p>
+
+  
+    <script>
+        function somar(){
+            var resultado = document.getElementById('resultado');
+           
+
+            var pNumero = document.getElementById('pNumero1');
+            var sNumero = document.getElementById('pNumero2');
+                     pNumero = Number(pNumero.value)
+                     sNumero = Number(sNumero.value)
+            var resposta = pNumero + sNumero;  
+            resultado.innerHTML = `A soma de ${pNumero} e ${sNumero} é igual a: <strong>${resposta}</strong> `  
+            resultado.style.backgroundColor = "Green"
+
+        }
+        function diminuir(){
+            var resultado2 = document.getElementById('resultado2');
+           
+
+            var nD1 = document.getElementById('nD1');
+            var nD2 = document.getElementById('nD2');
+                      nD1 = Number(nD1.value)
+                      nD2 = Number(nD2.value)
+            var resposta = nD1 - nD2;  
+            resultado2.innerHTML = `A subtraçao de ${nD1} e ${nD2} é igual a: <strong>${resposta}</strong> `  
+            resultado2.style.backgroundColor = "Green"
+        }
+        function multiplicar(){ 
+
+            var resultado2 = document.getElementById('resultado3');
+           
+
+            var nD1 = document.getElementById('nM1');
+            var nD2 = document.getElementById('nM2');
+                      nD1 = Number(nD1.value)
+                      nD2 = Number(nD2.value)
+            var resposta = nD1 * nD2;  
+            resultado2.innerHTML = `A multplicaçao de ${nD1} e ${nD2} é igual a: <strong>${resposta}</strong> `  
+            resultado2.style.backgroundColor = "Green"
+        } 
+        function dividir(){ 
+
+var resultado2 = document.getElementById('resultado4');
+
+
+var nD1 = document.getElementById('n1');
+var nD2 = document.getElementById('n2');
+          nD1 = Number(nD1.value)
+          nD2 = Number(nD2.value)
+var resposta = nD1 / nD2;  
+resultado2.innerHTML = `A divisao de ${nD1} e ${nD2} é igual a: <strong>${resposta}</strong> `  
+resultado2.style.backgroundColor = "Green"
+
+
+} 
+        function limpar(){ 
+            
+          resultado.innerHTML= "Resultado..." 
+          resultado.style.backgroundColor = "" 
+          resultado.style.color = "darkblue"
+          pNumero1.value= ""
+          pNumero2.value= ""
+
+        }
+        function limpar2(){ 
+          resultado2.innerHTML= "Resultado..." 
+          resultado2.style.backgroundColor = "" 
+          resultado2.style.color = "darkblue"
+          nD1.value= ""
+          nD2.value= ""
+
+        }
+        function limpar3(){ 
+          resultado3.innerHTML= "Resultado..." 
+          resultado3.style.backgroundColor = "" 
+          resultado3.style.color = "darkblue"
+          nM1.value= ""
+          nM2.value= ""
+
+        }
+        function limpar4(){ 
+          resultado4.innerHTML= "Resultado..." 
+          resultado4.style.backgroundColor = "" 
+          resultado4.style.color = "darkblue"
+         n1.value= ""
+         n2.value= ""
+
+        }
+
+    </script>
+</body>
+</html>
