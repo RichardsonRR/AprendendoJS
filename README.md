@@ -1,3 +1,3 @@
 # AprendendoJS
-Projetos iniciais para aprender JS  /n 
+Projetos iniciais para aprender JS <br/>  
 New projects to learn JS.
