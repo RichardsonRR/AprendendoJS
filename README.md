@@ -1,3 +1,3 @@
 # AprendendoJS
-Projetos iniciais para aprender JS <br/>  
+<h1>Projetos iniciais para aprender JS </h1><br/>  
 New projects to learn JS.
