@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header> 
+        <h1>Cronometro</h1>
+    </header>
+    <section>
+           <div>
+               <p id="msg">00:00:00</p>
+           </div>
+
+
+        <nav><button class="botoes_acao" onclick="start()" id="botaoStart" >Start</button>
+            <button class="botoes_acao" onclick="pause()" id="botaoPause">Pause</button> 
+            <button class="botoes_acao" onclick="reset()" id="botaoReset">Reset</button></nav>
+
+            <div id="pauseCampo">
+                
+            </div>
+            
+        
+        <script src="cronometro.js"></script>
+    </section>
+    
+</body>
+</html>

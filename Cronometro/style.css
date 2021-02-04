@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(152, 205, 207);
+}
+header{
+    text-align: center;
+    color: #070707;
+
+}
+section{
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    padding: 5px;
+    background-color: rgb(73, 194, 216);
+    text-align: center;
+    font: normal 25px/25px '';
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.418);
+    
+    
+}
+#section_cronometro{
+    padding: 50px;
+}
+.botoes_acao{
+    
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.459);
+    
+    
+}
+#botaoStart{
+    
+    background-color: rgba(0, 128, 28, 0.568);
+
+}
+#botaoPause{
+    background-color: rgba(255, 68, 0, 0.521);
+
+}
+#botaoReset{
+    background-color: rgba(255, 0, 0, 0.575);
+
+}
