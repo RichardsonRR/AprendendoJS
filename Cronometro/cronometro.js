@@ -4,6 +4,7 @@ horas = 0;
 minutos = 0;
 segundos= 0; 
 let contador;
+let salvador;
  
 
 function start(){
@@ -11,15 +12,13 @@ function start(){
     let botaoStart = document.getElementById('botaoStart');
     botaoStart.style.display = 'none'; 
     
-
+   
     
-
-    
+ 
 }
 function pause(){
     clearInterval(contador)
     botaoStart.style.display= 'block'; 
-    botaoStart.style.margin= 'auto'
 
 
 }
@@ -28,7 +27,7 @@ function reset(){
     horas= 0; minutos= 0; segundos= 0; 
     msg.innerHTML = `${horas}0:${minutos}0:${segundos}0`
     botaoStart.style.display= 'block'; 
-    botaoStart.style.margin= 'auto';
+    
 
      
 }
